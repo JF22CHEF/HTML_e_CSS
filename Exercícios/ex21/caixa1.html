@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/home_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.png" type="image/png">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /* box-level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /* borda entre o margin e o padding */
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /*
+            shorthand border:
+                border: -width -style -color;
+            */
+            /* espaçamento ou preenchimeno interno */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*
+            shorthand padding:
+                padding: -top -right -bottom -left;
+            */
+            /* espaçamento exterrno */
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /*
+            shorthand margin:
+                margin: -top -right -bottom -left;
+            */
+            /* contorno dentro do margin colado no border */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /*
+            shorthand outline:
+                outline: -width -style -color;
+            */
+        }
+        a { /* inline-level */
+            /* borda entre o margin e o padding */
+            border: 5px solid red;
+            /* espaçamento ou preenchimeno interno */
+            padding: 5px 5px 5px 5px;
+            /* espaçamento externo */
+            margin: 5px 5px 5px 5px;
+            /* contorno dentro do margin colado no border */
+            outline: 5px dashed blue;
+        }
+        p > a {
+            border: 0px;
+            padding: auto;
+            margin: 0px;
+            outline: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+        Parágrafos também são exemplos de caixas inline-level, mas os <a href="#">links são exemplos de caixasinline-level</a>. Portanto, vamos ver como tudo isso funciona na prática.
+    </p>
+    <p><a href="caixa2.html"><img src="imagens/arrow_forward_62dp_B7B7B7_FILL0_wght400_GRAD0_opsz48.png" alt="Botão voltar"></a></p>
+</body>
+</html>

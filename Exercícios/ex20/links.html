@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/home_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.png" type="image/png">
+    <title>Links</title>
+    <style>
+        /*
+            Os seletores CSS
+            *     = all elements
+            #     = id
+            .     = class
+            :     = pseudo-class
+            ::    = pseudo-element
+            >     = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            text-indent: 40px;
+            margin: 10px 0;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        p > a::before {
+            content: none;
+        }
+        p > a::after {
+            content: none;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::before {
+            content: "⇒ ";
+        }
+        a::after {
+            content: " ⇐";
+        }
+        .especial {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="http://gustavoguanabara.github.io" target="_blank" rel="external">Repositório do GitHub</a></li>
+        <li><a href="http://youtube.com/cursoemvideo" target="_blank" rel="external" class="especial">Canal do YouTube</a></li>
+        <li><a href="http://www.cursoemvideo.com" target="_blank" rel="external">Site do CurSoemvideo</a></li>
+    </ul>
+    <p><a href="pseudoclasse.html" rel="prev"><img src="imagens/arrow_back_60dp_B7B7B7_FILL0_wght400_GRAD0_opsz48.png" alt="Botão voltar"></a></p>
+</body>
+</html>

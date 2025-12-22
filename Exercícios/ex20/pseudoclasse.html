@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/home_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.png" type="image/png">
+    <title>Pseudoclasses</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover {
+            background-color: yellow;
+        }
+        div#d1:hover > p {
+            display: block;
+            font-weight: bolder;
+            margin-top: 70px;
+        }
+        div#d2:hover > p {
+            display: block;
+            font-weight: bolder;
+            margin-top: 70px;
+        }
+        div#d3:hover > p {
+            display: block;
+            font-weight: bolder;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01<br><p>(a+b)</p></div>
+    <div id="d2">02<br><p>(a+b)</p></div>
+    <div id="d3">03 <br><p>a<sup>2</sup> + 2ab + b<sup>2</sup></p></div>
+    <p><a href="hover.html" rel="next"><img src="imagens/arrow_forward_62dp_B7B7B7_FILL0_wght400_GRAD0_opsz48.png" alt="Botão avançar"></a></p>
+</body>
+</html>

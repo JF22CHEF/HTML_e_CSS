@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tenta abrir esse site em vários dispositivos diferentes ou simplesmente aumentar ou dimunuir o tamanho do teu navegador ou browser</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a produzir áudios em HTML5</p>
+    <!-- Os formatos compatíveis -->
+    <!-- MP3 / WAV / OGG -->
+    <p>Faixa de rap</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/GTA_RAP_Dyalla.mp3" type="audio/mpeg">
+        <source src="midia/GTA_RAP_Dyalla.ogg" type="audio/ogg">
+        <source src="midia/GTA_RAP_Dyalla.wav" type="audio/wav">
+        <p>Infelizmente o teu navegador não consegue reporduzir áudio <a href="midia/GTA_RAP_Dyalla.mp3">Clique aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+    <br>
+    <p>Faixa de violão</p>
+    <audio preload="metadata" controls>
+        <source src="midia/LACE_CLASSIC_MiniVandals.mp3" type="audio/mpeg">
+        <p>Infelizmente o teu navegador não consegue reporduzir áudio <a href="midia/LACE_CLASSIC_MiniVandals.mp3">Clique aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+    <br>
+    <p>Faixa de forró</p>
+    <audio preload="metadata" controls>
+        <!-- LOOP como parâmetro só se necessário -->
+        <source src="midia/FORRO_Quincas.mp3" type="audio/mpeg">
+        <p>Infelizmente o teu navegador não consegue reporduzir áudio <a href="midia/FORRO_Quincas.mp3">Clique aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+    <br>
+    <p>Faixa de Reggae</p>
+    <audio preload="metadata" controls>
+        <source src="midia/DUB_RAGGA_TrackTribe.mp3" type="audio/mpeg">
+        <p>Infelizmente o teu navegador não consegue reporduzir áudio <a href="midia/DUB_RAGGA_TrackTribe.mp3">Clique aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+</body>
+</html>

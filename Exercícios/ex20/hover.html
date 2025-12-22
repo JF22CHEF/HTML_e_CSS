@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/home_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.png" type="image/png">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1:hover {
+            color: yellow;
+            text-align: center;
+            margin: auto;
+            width: 300px;
+        }
+        div > p {
+            display: none;
+        }
+        div#exemplo1:hover {
+            color: red;
+        }
+        div#exemplo1:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        div#exemplo2:hover {
+            color: green;
+        }
+        div#exemplo2:hover > p {
+            display: block;
+            color: white;
+            background-color: green;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div id="exemplo1">
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...PARABÉNS POR TER ENCONTRADO!</p>
+    </div>
+    <div id="exemplo2">
+        <br>
+        2345MEIA78...
+        <p>Está na hora de molhar o biscoito!</p>
+    </div>
+    <p>Fim do exemplo</p>
+    <p><a href="pseudoclasse.html" rel="prev"><img src="imagens/arrow_back_60dp_B7B7B7_FILL0_wght400_GRAD0_opsz48.png" alt="Botão voltar"></a></p>
+    <p><a href="links.html" rel="next"><img src="imagens/arrow_forward_62dp_B7B7B7_FILL0_wght400_GRAD0_opsz48.png" alt="Botão avançar"></a></p>
+</body>
+</html>
