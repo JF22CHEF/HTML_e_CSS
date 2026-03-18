@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O alinhamento vertical</title>
+    <title>Astronauta no espaço</title>
     <style>
-        #container {
-            position: relative;
-            height: 500px;
-            padding: 10px;
-            background-color: purple;
+        body {
+            margin: 0px;
+            padding: 0px;
         }
 
-        #conteúdo {
+        main {
+            height: 100vh;
+            position: relative;
+            background: black url("imagens/espaco.jpg") no-repeat fixed center center / cover;
+        }
+
+        img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            height: 200px;
-            width: 400px;
-            background-color: yellow;
         }
     </style>
 </head>
 <body>
-    <section id="container">
-        <article id="conteúdo">
-            
-        </article>
-    </section>
+    <main>
+        <img src="imagens/astronauta.png" alt="Astronauta">
+    </main>
 </body>
 </html>
