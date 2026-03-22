@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: rgba(0, 0, 0, 0.754);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgba(0, 0, 0, 0.754);
+        }
+
+        tbody > tr:nth-child(odd) { /* ODD -> (2n-1) -> ímpar */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* EVEN -> (2n) -> par */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE -> tabela
+            THEAD -> cabeçalho da tabela
+                TH, TR, TD
+            TBODY -> corpo da tabela
+                TH, TR, TD
+            TFOOT -> rodapé da tabela
+                TH, TR, TD
+    -->
+    <table>
+        <caption>
+            População das unidades federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.965</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.768</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.018.650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.484.466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.337.357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.273.227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.809.394</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.318.822</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.777.646</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.572.868</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">871.960</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">734.004</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">523.220</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>394.788.388</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates rerum quis! Optio ea, autem architecto totam dolor quod veniam expedita vitae aperiam, dignissimos blanditiis. Molestias possimus odit cum consequatur.
+    Ad maiores fuga aut velit natus, modi suscipit quia ipsum tempora quo cum, voluptatem accusamus eos quasi aperiam voluptatibus nobis provident recusandae autem atque molestias? Quam, harum. Quas, quia expedita.
+    Praesentium neque maiores, iure fugiat eos sit voluptate dignissimos reprehenderit deserunt in quae, suscipit quas! Nobis rem soluta, similique in repellat voluptate id praesentium sint totam saepe odit labore rerum?
+    Fugit a quae facilis ex magni soluta fugiat aliquid. Enim doloribus id voluptatum similique vitae voluptatem corporis autem nobis veniam! Iste totam voluptatum molestias. Nam accusamus veniam eius consequatur amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates rerum quis! Optio ea, autem architecto totam dolor quod veniam expedita vitae aperiam, dignissimos blanditiis. Molestias possimus odit cum consequatur.
+    Ad maiores fuga aut velit natus, modi suscipit quia ipsum tempora quo cum, voluptatem accusamus eos quasi aperiam voluptatibus nobis provident recusandae autem atque molestias? Quam, harum. Quas, quia expedita.
+    Praesentium neque maiores, iure fugiat eos sit voluptate dignissimos reprehenderit deserunt in quae, suscipit quas! Nobis rem soluta, similique in repellat voluptate id praesentium sint totam saepe odit labore rerum?
+    Fugit a quae facilis ex magni soluta fugiat aliquid. Enim doloribus id voluptatum similique vitae voluptatem corporis autem nobis veniam! Iste totam voluptatum molestias. Nam accusamus veniam eius consequatur amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates rerum quis! Optio ea, autem architecto totam dolor quod veniam expedita vitae aperiam, dignissimos blanditiis. Molestias possimus odit cum consequatur.
+    Ad maiores fuga aut velit natus, modi suscipit quia ipsum tempora quo cum, voluptatem accusamus eos quasi aperiam voluptatibus nobis provident recusandae autem atque molestias? Quam, harum. Quas, quia expedita.
+    Praesentium neque maiores, iure fugiat eos sit voluptate dignissimos reprehenderit deserunt in quae, suscipit quas! Nobis rem soluta, similique in repellat voluptate id praesentium sint totam saepe odit labore rerum?
+    Fugit a quae facilis ex magni soluta fugiat aliquid. Enim doloribus id voluptatum similique vitae voluptatem corporis autem nobis veniam! Iste totam voluptatum molestias. Nam accusamus veniam eius consequatur amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates rerum quis! Optio ea, autem architecto totam dolor quod veniam expedita vitae aperiam, dignissimos blanditiis. Molestias possimus odit cum consequatur.
+    Ad maiores fuga aut velit natus, modi suscipit quia ipsum tempora quo cum, voluptatem accusamus eos quasi aperiam voluptatibus nobis provident recusandae autem atque molestias? Quam, harum. Quas, quia expedita.
+    Praesentium neque maiores, iure fugiat eos sit voluptate dignissimos reprehenderit deserunt in quae, suscipit quas! Nobis rem soluta, similique in repellat voluptate id praesentium sint totam saepe odit labore rerum?
+    Fugit a quae facilis ex magni soluta fugiat aliquid. Enim doloribus id voluptatum similique vitae voluptatem corporis autem nobis veniam! Iste totam voluptatum molestias. Nam accusamus veniam eius consequatur amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates rerum quis! Optio ea, autem architecto totam dolor quod veniam expedita vitae aperiam, dignissimos blanditiis. Molestias possimus odit cum consequatur.
+    Ad maiores fuga aut velit natus, modi suscipit quia ipsum tempora quo cum, voluptatem accusamus eos quasi aperiam voluptatibus nobis provident recusandae autem atque molestias? Quam, harum. Quas, quia expedita.
+    Praesentium neque maiores, iure fugiat eos sit voluptate dignissimos reprehenderit deserunt in quae, suscipit quas! Nobis rem soluta, similique in repellat voluptate id praesentium sint totam saepe odit labore rerum?
+    Fugit a quae facilis ex magni soluta fugiat aliquid. Enim doloribus id voluptatum similique vitae voluptatem corporis autem nobis veniam! Iste totam voluptatum molestias. Nam accusamus veniam eius consequatur amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates rerum quis! Optio ea, autem architecto totam dolor quod veniam expedita vitae aperiam, dignissimos blanditiis. Molestias possimus odit cum consequatur.
+    Ad maiores fuga aut velit natus, modi suscipit quia ipsum tempora quo cum, voluptatem accusamus eos quasi aperiam voluptatibus nobis provident recusandae autem atque molestias? Quam, harum. Quas, quia expedita.
+    Praesentium neque maiores, iure fugiat eos sit voluptate dignissimos reprehenderit deserunt in quae, suscipit quas! Nobis rem soluta, similique in repellat voluptate id praesentium sint totam saepe odit labore rerum?
+    Fugit a quae facilis ex magni soluta fugiat aliquid. Enim doloribus id voluptatum similique vitae voluptatem corporis autem nobis veniam! Iste totam voluptatum molestias. Nam accusamus veniam eius consequatur amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates rerum quis! Optio ea, autem architecto totam dolor quod veniam expedita vitae aperiam, dignissimos blanditiis. Molestias possimus odit cum consequatur.
+    Ad maiores fuga aut velit natus, modi suscipit quia ipsum tempora quo cum, voluptatem accusamus eos quasi aperiam voluptatibus nobis provident recusandae autem atque molestias? Quam, harum. Quas, quia expedita.
+    Praesentium neque maiores, iure fugiat eos sit voluptate dignissimos reprehenderit deserunt in quae, suscipit quas! Nobis rem soluta, similique in repellat voluptate id praesentium sint totam saepe odit labore rerum?
+    Fugit a quae facilis ex magni soluta fugiat aliquid. Enim doloribus id voluptatum similique vitae voluptatem corporis autem nobis veniam! Iste totam voluptatum molestias. Nam accusamus veniam eius consequatur amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates rerum quis! Optio ea, autem architecto totam dolor quod veniam expedita vitae aperiam, dignissimos blanditiis. Molestias possimus odit cum consequatur.
+    Ad maiores fuga aut velit natus, modi suscipit quia ipsum tempora quo cum, voluptatem accusamus eos quasi aperiam voluptatibus nobis provident recusandae autem atque molestias? Quam, harum. Quas, quia expedita.
+    Praesentium neque maiores, iure fugiat eos sit voluptate dignissimos reprehenderit deserunt in quae, suscipit quas! Nobis rem soluta, similique in repellat voluptate id praesentium sint totam saepe odit labore rerum?
+    Fugit a quae facilis ex magni soluta fugiat aliquid. Enim doloribus id voluptatum similique vitae voluptatem corporis autem nobis veniam! Iste totam voluptatum molestias. Nam accusamus veniam eius consequatur amet.</p>
+
+</body>
+</html>
