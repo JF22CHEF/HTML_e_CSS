@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The flexible box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+            /*
+                     main-axis    cross-axis                   main-axis     cross-axis
+                row    --- >    |   top-down    | row-reverse    < ---    |    top-down
+                column  |       |  left-right   | column-reverse  / \     |   left-right
+                       \ /                                         |
+                main-axis  -> main-start e main-end
+                cross-axis -> cross-start e cross-end
+                main-axis segue no sentido da flexbox, chega a inverter no reverse
+                cross-axis segue na direção normal de flexbox, não inverte no reverse
+            */
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+</body>
+</html>
