@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As caixas flexíveis</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            /*
+                propriedades do justify-content:
+                flex-start -> itens alinhados na direção do main-start (padrão)
+                flex-end -> itens alinhados na direção do main-end
+                center -> itens alinhados ao centro entre main-start e main-end (sem espaço entre os blocos)
+                space-between -> primeiro item colado ao main-start, último item colado ao main-end, e os demais itens alinhados com espaços vazios de mesmo tamanho entre eles
+                space-evenly -> itens alinhados com espaços vazios de mesmo tamanho entre eles, incluindo também as extremidades do container, ele seria o mais simétrico entre todos os outros valores
+                space-around -> dado a quantidade de itens, o container é dividido em partições iguais da mesma quantidade de itens, e cada item é centralizado dentro da sua própria partição
+            */
+            /*
+                propriedades do align-items:
+                stretch -> itens esticados ao longo do cross-axis para preencher o container (padrão)
+                flex-start -> itens alinhados na direção do cross-start
+                flex-end -> itens alinhados na direção do cross-end
+                center -> itens alinhados ao centro entre cross-start e cross-end (sem espaço entre os blocos)
+            */
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+</body>
+</html>
