@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As flexible box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+            /*
+                propriedades do align-content:
+                stretch -> itens esticados ao longo do cross-axis para preencher o container para elementos empacotados (padrão)
+                flex-start -> itens alinhados na direção do cross-start para elementos empacotados
+                flex-end -> itens alinhados na direção do cross-end para elementos empacotados
+                center -> itens alinhados ao centro entre cross-start e cross-end para elementos empacotados (sem espaço entre os blocos)
+                space-between -> primeiro item colado ao cross-start, último item colado ao cross-end, e os demais itens alinhados com espaços vazios de mesmo tamanho entre eles para elementos empacotados
+                space-evenly -> itens alinhados com espaços vazios de mesmo tamanho entre eles, incluindo também as extremidades do container, ele seria o mais simétrico entre todos os outros valores para elementos empacotados
+                space-around -> dado a quantidade de itens, o container é dividido em partições iguais da mesma quantidade de itens, e cada item é centralizado dentro da sua própria partição para elementos empacotados
+            */
+            /*
+                diferenças entre justify-content e align-content e align-items:
+                justify-content -> alinha os itens ao longo do main-axis, que é o eixo principal, e independe dos itens estarem empacotados ou não
+                align-content -> alinha os itens ao longo do cross-axis, que é o eixo perpendicular ao main-axis, e tem efeito somente sobre os itens empacotados
+                align-items -> alinha os itens ao longo do cross-axis, que é o eixo perpendicular ao main-axis, e independe dos itens estarem empacotados ou não
+            */
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+    </div>
+</body>
+</html>
